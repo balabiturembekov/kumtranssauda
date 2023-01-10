@@ -26,7 +26,7 @@ const Offer: FC = () => {
             <span>Песок</span> Строительный
           </li>
           <li className={styles.offerItem}>
-            <span>Доставка</span> п.Сарыозек
+            <span>Доставка</span> Город и область
           </li>
           <li className={styles.offerItem}>
             <span>Надежность</span>5 месяцев

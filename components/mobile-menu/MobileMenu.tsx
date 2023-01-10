@@ -1,4 +1,5 @@
 import { FC } from "react";
+import Link from "next/link";
 
 type NavLinks = {
   id: string;
@@ -17,7 +18,7 @@ const MobileMenu: FC<MobileMenuProps> = ({ open, navlinks }) => {
       <ul>
         {navlinks.map(({ id, href, text }) => (
           <li key={id} className="mobileItem">
-            <a href={href}>{text}</a>
+            <Link href={href}>{text}</Link>
           </li>
         ))}
       </ul>

@@ -9,10 +9,10 @@ import MenuIcon from "../menu-icon/MenuIcon";
 import MobileMenu from "../mobile-menu/MobileMenu";
 
 const navLink = [
-  { id: "1", href: "#program", text: "Программа курса" },
-  { id: "2", href: "#order", text: "Рассрочка" },
-  { id: "3", href: "#subscribe", text: "Записаться" },
-  { id: "4", href: "#blog", text: "Журнал" },
+  { id: "1", href: "/", text: "Главная" },
+  { id: "2", href: "/about", text: "О компаний" },
+  { id: "3", href: "/services", text: "Сервис" },
+  { id: "4", href: "/contact", text: "Контакты" },
 ];
 
 const Header: FC = () => {
