@@ -32,7 +32,7 @@ const Offer: FC = () => {
             <span>Надежность</span>5 месяцев
           </li>
           <li className={styles.offerItem}>
-            <span>Цена</span> 5000 ₸
+            <span>Цена</span> 5000 тг. по городу и обл.
           </li>
         </ul>
       </div>

@@ -102,7 +102,7 @@ a {
   transform: translateX(-100%) rotate(-90deg);
 }
 .mobileMenu {
-  margin-top: 120px;
+  margin-top: 40px;
   background: #fff;
   position: fixed;
   padding: 100px 20px;

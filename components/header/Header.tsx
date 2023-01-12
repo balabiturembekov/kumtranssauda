@@ -1,9 +1,6 @@
 import { FC, useState } from "react";
-import Link from "next/link";
 import gilroy from "../../fonts";
 import styles from "../../styles/Header.module.css";
-import Button from "../buttons/Button";
-import Socials from "../socials/Socials";
 import Logo from "../logo/Logo";
 import MenuIcon from "../menu-icon/MenuIcon";
 import MobileMenu from "../mobile-menu/MobileMenu";
@@ -24,21 +21,8 @@ const Header: FC = () => {
 
   return (
     <header className={`${styles.header} ${gilroy.className}`}>
-      <nav className={styles.salesBar}>
-        <div className={`container ${styles.salesContainer}`}>
-          <h2>
-            Скидка <span>10%</span>
-          </h2>
-          <Link href="/cashback">
-            <Button
-              text="Хочу скидку"
-              className={`${styles.salesBtn} buttonAccent`}
-            />
-          </Link>
-        </div>
-      </nav>
       <nav className={styles.navBar}>
-        <div className={`container ${styles.salesContainer}`}>
+        <div className={`container ${styles.navContainer}`}>
           <Logo />
           <ul className={styles.menu}>
             {navLink.map(({ id, href, text }) => (
@@ -47,7 +31,6 @@ const Header: FC = () => {
               </li>
             ))}
           </ul>
-          <Socials />
           <MenuIcon open={open} onClick={handleMenuClick} />
         </div>
       </nav>
