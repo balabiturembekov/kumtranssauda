@@ -6,7 +6,7 @@
   --normal-font-size: 1rem;
   --text-color: #212121;
   --section-bg: #fafafa;
-  --section-gap: 2.5rem;
+  --section-gap: 3.5rem;
   --sales-bar-bg: #252525;
 }
 
@@ -30,7 +30,12 @@ body {
   color: var(--text-color);
 }
 
-.main {
+h3 {
+  font-size: 18px;
+  line-height: 1.25em;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 5px;
 }
 
 ul {
@@ -50,6 +55,19 @@ a {
 
 .section {
   padding: var(--section-gap) 0;
+}
+
+.sectionHeading {
+  font-size: 28px;
+  line-height: 1.1em;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+.sectionHeading span {
+  background: linear-gradient(55deg, #e6468c 0%, #ac3ad0 90%);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .hamburger {
@@ -133,4 +151,62 @@ a {
   font-weight: bold;
   font-family: inherit;
   text-transform: uppercase;
+}
+
+/* Audiense Section Style */
+.audienseList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.audienseItem {
+  display: flex;
+  gap: 1rem;
+}
+
+.audienseItem span {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1em;
+  background: linear-gradient(180deg, #fce442, #ffc700 40%, #e36f58);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.audienseInfo {
+  margin: 70px auto 0px;
+  max-width: 640px;
+  padding: 20px 20px 20px 70px;
+  border-top: 4px solid #fce442;
+  background: #fafafa url("../public/update-icon.svg") no-repeat 20px 20px/40px;
+}
+
+.audienseInfo b {
+  display: block;
+  margin-top: 5px;
+}
+
+@media screen and (min-width: 767px) {
+  .sectionHeading {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  .audienseList {
+    column-gap: 6rem;
+  }
+
+  .audienseItem span {
+    font-size: 56px;
+  }
+
+  h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .audienseInfo {
+    background: #fafafa url("../public/update-icon.svg") no-repeat 25px 25px/55px;
+    padding-left: 90px;
+  }
 }

@@ -2,6 +2,7 @@ import Head from "next/head";
 import Offer from "../components/offer/Offer";
 import { FC } from "react";
 import gilroy from "../fonts";
+import Audiense from "../components/audiens/Audiense";
 
 const Home: FC = () => {
   return (
@@ -18,6 +19,7 @@ const Home: FC = () => {
       </Head>
       <main className={`main ${gilroy.className}`}>
         <Offer />
+        <Audiense />
       </main>
     </>
   );
