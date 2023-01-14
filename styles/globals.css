@@ -263,7 +263,7 @@ textarea:focus {
 	text-decoration: none;
 	outline: 0;
 	-webkit-tap-highlight-color: transparent;
-	-webkit-tap-highlight-color: transparent
+	-webkit-tap-highlight-color: transparent;
 }
 
 section {
