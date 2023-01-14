@@ -1,16 +1,9 @@
-import Image from "next/image";
-import styles from "../../styles/Header.module.css";
+import { FC } from "react";
 
-const Logo = () => {
+const Logo: FC = () => {
   return (
-    <div className={styles.logo}>
-      <Image
-        src="./devhouse.svg"
-        alt="dev house logo"
-        width="70"
-        height="67"
-        priority
-      />
+    <div className="logo">
+      <img src="./devhouse.svg" alt="dev house logo" />
     </div>
   );
 };

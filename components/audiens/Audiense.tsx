@@ -18,15 +18,15 @@ const audienseList = [
 
 const Audiense: FC = () => {
   return (
-    <section className="section">
+    <section className="audience" id="audience">
       <div className="container">
-        <h2 className="sectionHeading">
+        <h2 className="section-heading">
           <span>Виды предлогаемых песков </span> для вас
         </h2>
-        <div className="audienseContent">
-          <ul className="audienseList">
+        <div>
+          <ul className="audiense-list flex-wrap">
             {audienseList.map(({ id, title, text }) => (
-              <li className="audienseItem" key={id}>
+              <li className="audience-item" key={id}>
                 <span>0{id}</span>
                 <div>
                   <h3>{title}</h3> <p>{text}</p>
@@ -34,7 +34,7 @@ const Audiense: FC = () => {
               </li>
             ))}
           </ul>
-          <div className="audienseInfo">
+          <div className="infoblock infoblock_update">
             Мы следим за качеством для того,
             <br /> чтобы и дальше какое-то описание или важная информация по
             обновлениям или еще что-то

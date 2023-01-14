@@ -1,5 +1,4 @@
 import { FC } from "react";
-import styles from "../../styles/Header.module.css";
 
 type MenuIconProps = {
   open: boolean;
@@ -8,7 +7,7 @@ type MenuIconProps = {
 
 const MenuIcon: FC<MenuIconProps> = ({ open, onClick }) => {
   return (
-    <div onClick={onClick} className={styles.menuIcon}>
+    <div onClick={onClick} className="menu-icon">
       <span className={open ? `hamburger open` : `hamburger`}></span>
     </div>
   );

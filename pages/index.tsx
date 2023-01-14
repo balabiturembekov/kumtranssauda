@@ -2,6 +2,7 @@ import { FC } from "react";
 import Head from "next/head";
 import Offer from "../components/offer/Offer";
 import Audiense from "../components/audiens/Audiense";
+import Skills from "../components/skills/Skills";
 
 const Home: FC = () => {
   return (
@@ -19,6 +20,7 @@ const Home: FC = () => {
       <main className="main">
         <Offer />
         <Audiense />
+        <Skills />
       </main>
     </>
   );

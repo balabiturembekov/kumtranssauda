@@ -1,16 +1,15 @@
 import { FC } from "react";
 import Button from "../buttons/Button";
-import styles from "../../styles/Offer.module.css";
 
 const Offer: FC = () => {
   return (
-    <section className="section">
-      <div className={`container ${styles.offerContainer}`}>
-        <div className={styles.offerBlock}>
-          <h1 className={styles.offerHeading}>
+    <section className="offer" id="offer">
+      <div className="container">
+        <div className="offer-block">
+          <h1 className="offer-heading">
             Строительный <span>песок</span>
           </h1>
-          <div className={styles.offerDesc}>
+          <div className="offer-desc">
             <ul>
               <li>Песок строительный фракция 2,9</li>
               <li>Песок обогащённый (1,2: 1,5: 1,9: 2,5: 2,9) вперемешку </li>
@@ -19,19 +18,19 @@ const Offer: FC = () => {
           </div>
         </div>
 
-        <Button text="Оставить заявку" className={styles.offerBtn} />
+        <Button text="Оставить заявку" />
 
-        <ul className={styles.offerList}>
-          <li className={styles.offerItem}>
+        <ul className="offer-list flex-wrap">
+          <li className="offer-item">
             <span>Песок</span> Строительный
           </li>
-          <li className={styles.offerItem}>
+          <li className="offer-item">
             <span>Доставка</span> Город и область
           </li>
-          <li className={styles.offerItem}>
+          <li className="offer-item">
             <span>Надежность</span>5 месяцев
           </li>
-          <li className={styles.offerItem}>
+          <li className="offer-item">
             <span>Цена</span> 5000 тг. по городу и обл.
           </li>
         </ul>

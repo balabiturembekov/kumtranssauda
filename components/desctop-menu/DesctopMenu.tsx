@@ -1,5 +1,5 @@
-import Link from "next/link";
 import React, { FC } from "react";
+import Link from "next/link";
 import { NavLinks } from "../../types";
 
 type DesctopMenuProps = {
@@ -8,9 +8,9 @@ type DesctopMenuProps = {
 
 const DesctopMenu: FC<DesctopMenuProps> = ({ navlinks }) => {
   return (
-    <ul className="descMenu">
+    <ul className="menu">
       {navlinks.map(({ id, href, text }) => (
-        <li key={id} className="mobileItem">
+        <li key={id} className="menu-item">
           <Link href={href}>{text}</Link>
         </li>
       ))}
