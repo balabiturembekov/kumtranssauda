@@ -1178,10 +1178,6 @@ header {
 	color: #fff;
 }
 
-/* .footer-block, .mission, .copyright {
-	width: calc(33% - 20px);
-} */
-
 .footer-block h4 {
 	font-size: 20px;
 }
@@ -1270,7 +1266,6 @@ header {
 	height: 50.5px;
 	width: calc(100% - 2px);
 	display: block;
-	/* 	background: var(--color-accent); */
 	background: linear-gradient(55deg, #fce442 0%, #FFC700 35%, #e36f58 90%);
 	left: 0;
 	top: 0;
@@ -1293,8 +1288,6 @@ header {
 .workplan-date {
 	padding: 14px 0 14px 30px;
 	background: url(../public/big-arrow.svg) no-repeat right center;
-	/* 	-webkit-clip-path: polygon(0% 0, 86% 0, 100% 50%, 86% 100%, 0 100%, 0 100%);
-	clip-path: polygon(0% 0, 86% 0, 100% 50%, 86% 100%, 0 100%, 0 100%); */
 	margin-bottom: 20px;
 }
 
@@ -1364,7 +1357,6 @@ header {
 	position: absolute;
 	left: 0;
 	top: 0;
-	/* 	color: var(--color-accent); */
 	background: linear-gradient(180deg, #fce442, #FFC700 40%, #e36f58);
 	-webkit-background-clip: text;
 	color: transparent;
@@ -1568,10 +1560,6 @@ header {
 	max-width: 470px;
 }
 
-.agree label a {
-	/*	color: #0074b3;*/
-}
-
 .agree label a:hover {
 	color: var(--color-accent);
 }
@@ -1622,7 +1610,6 @@ header {
 	transform: scale(1);
 }
 
-
 #form-loader {
 	display: none;
 	position: fixed;
@@ -1654,7 +1641,6 @@ header {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	/* align-items: flex-start; */
 	gap: 5px;
 }
 
