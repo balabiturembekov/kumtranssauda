@@ -1,7 +1,6 @@
+import { FC } from "react";
 import Head from "next/head";
 import Offer from "../components/offer/Offer";
-import { FC } from "react";
-import gilroy from "../fonts";
 import Audiense from "../components/audiens/Audiense";
 
 const Home: FC = () => {
@@ -17,7 +16,7 @@ const Home: FC = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`main ${gilroy.className}`}>
+      <main className="main">
         <Offer />
         <Audiense />
       </main>

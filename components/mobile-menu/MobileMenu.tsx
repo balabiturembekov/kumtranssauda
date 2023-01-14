@@ -1,11 +1,6 @@
 import { FC } from "react";
 import Link from "next/link";
-
-type NavLinks = {
-  id: string;
-  href: string;
-  text: string;
-};
+import { NavLinks } from "../../types";
 
 type MobileMenuProps = {
   open: boolean;

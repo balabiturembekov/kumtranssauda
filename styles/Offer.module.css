@@ -104,3 +104,9 @@
   font-size: 14px;
   color: #555555;
 }
+
+@media screen and (min-width: 1200px) {
+  .offerContainer {
+    background: url("../public/offer-pic.jpg") no-repeat right 70px/600px;
+  }
+}

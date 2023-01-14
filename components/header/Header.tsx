@@ -1,9 +1,9 @@
 import { FC, useState } from "react";
-import gilroy from "../../fonts";
-import styles from "../../styles/Header.module.css";
+import DesctopMenu from "../desctop-menu/DesctopMenu";
 import Logo from "../logo/Logo";
 import MenuIcon from "../menu-icon/MenuIcon";
 import MobileMenu from "../mobile-menu/MobileMenu";
+import styles from "../../styles/Header.module.css";
 
 const navLink = [
   { id: "1", href: "/", text: "Главная" },
@@ -20,17 +20,11 @@ const Header: FC = () => {
   };
 
   return (
-    <header className={`${styles.header} ${gilroy.className}`}>
+    <header className={styles.header}>
       <nav className={styles.navBar}>
         <div className={`container ${styles.navContainer}`}>
           <Logo />
-          <ul className={styles.menu}>
-            {navLink.map(({ id, href, text }) => (
-              <li className={styles.menuItem} key={id}>
-                <a href={href}>{text}</a>
-              </li>
-            ))}
-          </ul>
+          <DesctopMenu navlinks={navLink} />
           <MenuIcon open={open} onClick={handleMenuClick} />
         </div>
       </nav>

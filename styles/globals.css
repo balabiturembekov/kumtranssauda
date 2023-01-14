@@ -119,6 +119,14 @@ a {
   bottom: 0;
   transform: translateX(-100%) rotate(-90deg);
 }
+
+.descMenu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  display: none;
+}
+
 .mobileMenu {
   margin-top: 40px;
   background: #fff;
@@ -208,5 +216,24 @@ a {
   .audienseInfo {
     background: #fafafa url("../public/update-icon.svg") no-repeat 25px 25px/55px;
     padding-left: 90px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mobileMenu {
+    display: none;
+  }
+
+  .descMenu {
+    display: flex;
+  }
+
+  .descMenu .mobileItem:hover {
+    text-decoration: underline;
+  }
+
+  .audienseList {
+    justify-content: space-between;
+    row-gap: 3rem;
   }
 }

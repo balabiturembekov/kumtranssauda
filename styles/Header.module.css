@@ -43,3 +43,9 @@
   z-index: 15;
   cursor: pointer;
 }
+
+@media screen and (min-width: 992px) {
+  .menuIcon {
+    display: none;
+  }
+}
