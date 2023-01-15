@@ -1,12 +1,12 @@
 import { FC } from "react";
 
 const skilssList = [
-  { id: "1", text: "Создавать логику сайта, приложений" },
-  { id: "2", text: "Разрабатывать архитектуру и алгоритмику" },
-  { id: "3", text: "Проектировать интерфейсы и анимации" },
-  { id: "4", text: "Писать чистый и эффективный код HTML, CSS и JavaScript" },
-  { id: "5", text: "Тестировать код, делать рефакторинг и оптимизацию" },
-  { id: "6", text: "Эффективно определять наилучшие решения для задач" },
+  { id: "1", text: "Надо наполнить контентом" },
+  { id: "2", text: "Надо наполнить контентом" },
+  { id: "3", text: "Надо наполнить контентом" },
+  { id: "4", text: "Надо наполнить контентом" },
+  { id: "5", text: "Надо наполнить контентом" },
+  { id: "6", text: "Надо наполнить контентом" },
 ];
 
 const Skills: FC = () => {
@@ -28,21 +28,16 @@ const Skills: FC = () => {
         <div className="skills-content">
           <div className="skills-block">
             <h2 className="section-heading">
-              <span>Сколько зарабатывает</span>
+              <span>Заголовок секции</span>
               <br />
-              frontend-разработчик
+              Место для заголовка
             </h2>
-            <div className="skills-price">90 000 $</div>
+            <div className="skills-price">5 000 тг.</div>
             <div className="section-desc">
-              В месяц на позиции Junior Frontend Developer.
-              <span className="skills-tip">
-                Значение из исследования «Хабр Карьера»
-              </span>
+              Доставка в любую точку города и области
+              <span className="skills-tip">Место для когото текста</span>
             </div>
-            <p>
-              Уже сейчас на сате hh.ru размещено более 3000 вакансий
-              разработчиков!
-            </p>
+            <p>2 место для какогото текста, описание или информация</p>
           </div>
         </div>
       </div>
