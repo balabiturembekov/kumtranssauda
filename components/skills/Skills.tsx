@@ -1,4 +1,6 @@
 import { FC } from "react";
+import { motion } from "framer-motion";
+import { container, item } from "../../animations";
 
 const skilssList = [
   { id: "1", text: "Надо наполнить контентом" },
@@ -15,14 +17,28 @@ const Skills: FC = () => {
       <div className="skills-wrap flex-wrap">
         <div className="skills-content">
           <div className="skills-block">
-            <h2 className="section-heading">
+            <motion.h2
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ ease: "easeInOut", duration: 0.3 }}
+              className="section-heading"
+            >
               <span>Заголовок секции</span> продолжение
-            </h2>
-            <ul className="skills-list">
+            </motion.h2>
+            <motion.ul
+              variants={container}
+              initial="hidden"
+              exit="exit"
+              whileInView="show"
+              viewport={{ once: false }}
+              className="skills-list"
+            >
               {skilssList.map(({ id, text }) => (
-                <li key={id}>{text}</li>
+                <motion.li variants={item} key={id}>
+                  {text}
+                </motion.li>
               ))}
-            </ul>
+            </motion.ul>
           </div>
         </div>
         <div className="skills-content">

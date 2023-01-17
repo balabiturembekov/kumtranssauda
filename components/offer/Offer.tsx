@@ -1,21 +1,38 @@
 import { FC } from "react";
 import Button from "../buttons/Button";
+import { motion } from "framer-motion";
 
 const Offer: FC = () => {
   return (
-    <section className="offer" id="offer">
+    <motion.section
+      initial={{ y: 400, opacity: 0 }}
+      animate={{ y: [100, 0], opacity: 1 }}
+      transition={{ ease: "easeInOut", duration: 0.3, delay: 0.1 }}
+      className="offer"
+      id="offer"
+    >
       <div className="container">
         <div className="offer-block">
-          <h1 className="offer-heading">
+          <motion.h1
+            initial={{ x: -200, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
+            className="offer-heading"
+          >
             Строительный <span>песок</span>
-          </h1>
-          <div className="offer-desc">
+          </motion.h1>
+          <motion.div
+            initial={{ x: 200, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.4, delay: 0.3 }}
+            className="offer-desc"
+          >
             <ul>
               <li>Песок строительный фракция 2,9</li>
               <li>Песок обогащённый (1,2: 1,5: 1,9: 2,5: 2,9) вперемешку </li>
               <li>Песок строительный фракция 1.9</li>
             </ul>
-          </div>
+          </motion.div>
         </div>
 
         <Button text="Оставить заявку" />
@@ -35,7 +52,7 @@ const Offer: FC = () => {
           </li>
         </ul>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

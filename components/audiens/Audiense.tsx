@@ -1,4 +1,6 @@
 import { FC } from "react";
+import { motion } from "framer-motion";
+import { container, item } from "../../animations";
 
 const audienseList = [
   {
@@ -20,26 +22,52 @@ const Audiense: FC = () => {
   return (
     <section className="audience" id="audience">
       <div className="container">
-        <h2 className="section-heading">
+        <motion.h2
+          initial={{ y: 200, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
+          className="section-heading"
+        >
           <span>Виды предлогаемых песков </span> для вас
-        </h2>
+        </motion.h2>
         <div>
-          <ul className="audiense-list flex-wrap">
+          <motion.ul
+            variants={container}
+            initial="hidden"
+            exit="exit"
+            whileInView="show"
+            viewport={{ once: false }}
+            className="audiense-list flex-wrap"
+          >
             {audienseList.map(({ id, title, text }) => (
-              <li className="audience-item" key={id}>
+              <motion.li variants={item} className="audience-item" key={id}>
                 <span>0{id}</span>
                 <div>
                   <h3>{title}</h3> <p>{text}</p>
                 </div>
-              </li>
+              </motion.li>
             ))}
-          </ul>
-          <div className="infoblock infoblock_update">
+          </motion.ul>
+          <motion.div
+            variants={{
+              hidden: { x: 100, opacity: 0 },
+              show: {
+                x: 0,
+                opacity: 1,
+                transition: { ease: "easeInOut", duration: 0.3, delay: 1 },
+              },
+            }}
+            initial="hidden"
+            exit="exit"
+            whileInView="show"
+            className="infoblock infoblock_update"
+          >
             Мы следим за качеством для того,
             <br /> чтобы и дальше какое-то описание или важная информация по
             обновлениям или еще что-то
             <b>Обновлено: {new Date().getFullYear()} г.</b>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
