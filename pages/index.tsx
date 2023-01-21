@@ -3,6 +3,7 @@ import Head from "next/head";
 import Offer from "../components/offer/Offer";
 import Audiense from "../components/audiens/Audiense";
 import Skills from "../components/skills/Skills";
+import Question from "../components/questions/Questions";
 
 const Home: FC = () => {
   return (
@@ -21,6 +22,7 @@ const Home: FC = () => {
         <Offer />
         <Audiense />
         <Skills />
+        <Question />
       </main>
     </>
   );
