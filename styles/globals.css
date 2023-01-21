@@ -86,6 +86,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
@@ -579,11 +580,13 @@ textarea:focus {
 }
 
 .mobile-menu {
-  background: #fff;
+  background: url(../public/menubg.jpg) no-repeat;
+  background-size: cover;
+  background-position: 0 0;
   position: fixed;
-  padding: 100px 20px;
+  padding: 130px 20px;
   z-index: 13;
-  top: 64px;
+  top: 0;
   width: 0;
   height: 100%;
   visibility: hidden;
@@ -770,7 +773,15 @@ html.modal-is-locked {
 }
 
 header {
-  position: relative;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.header.sticky {
+  box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .nav-bar {
@@ -778,6 +789,12 @@ header {
   background: #ffffff;
   position: static;
   width: 100%;
+  transition: background 0.2s ease;
+}
+
+.header.sticky .nav-bar {
+  background: linear-gradient(55deg, #fce442, #ffc700 40%, #e36f58);
+  padding: 10px 0;
 }
 
 .nav-bar .container {
@@ -948,7 +965,7 @@ header {
 }
 
 .offer {
-  padding-top: 80px;
+  padding-top: 200px;
 }
 
 .offer .container {
@@ -2380,7 +2397,7 @@ header {
   }
 
   .offer {
-    padding: 50px 0;
+    padding: 140px 0;
   }
 
   .offer-heading {
@@ -2503,25 +2520,6 @@ header {
     -ms-flex-pack: center;
     justify-content: center;
     text-align: center;
-  }
-
-  .timer {
-    display: none;
-  }
-
-  .sales-bar h2 {
-    font-size: 20px;
-    line-height: 1.5em;
-  }
-
-  .sales-bar h2 > span {
-    font-size: 30px;
-  }
-
-  .sales-bar .button {
-    max-width: 200px;
-    height: 50px;
-    line-height: 50px;
   }
 
   .subscribe-modal h2 {

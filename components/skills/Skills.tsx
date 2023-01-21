@@ -17,14 +17,9 @@ const Skills: FC = () => {
       <div className="skills-wrap flex-wrap">
         <div className="skills-content">
           <div className="skills-block">
-            <motion.h2
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ ease: "easeInOut", duration: 0.3 }}
-              className="section-heading"
-            >
+            <h2 className="section-heading">
               <span>Заголовок секции</span> продолжение
-            </motion.h2>
+            </h2>
             <motion.ul
               variants={container}
               initial="hidden"

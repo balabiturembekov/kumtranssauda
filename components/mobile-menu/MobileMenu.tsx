@@ -6,14 +6,15 @@ import Socials from "../socials/Socials";
 type MobileMenuProps = {
   open: boolean;
   navlinks: NavLinks[];
+  setOpen: () => void;
 };
 
-const MobileMenu: FC<MobileMenuProps> = ({ open, navlinks }) => {
+const MobileMenu: FC<MobileMenuProps> = ({ open, setOpen, navlinks }) => {
   return (
     <div className={open ? `mobile-menu active` : `mobile-menu`}>
       <ul className="menu">
         {navlinks.map(({ id, href, text }) => (
-          <li key={id} className="menu-item">
+          <li onClick={setOpen} key={id} className="menu-item">
             <Link href={href}>{text}</Link>
           </li>
         ))}

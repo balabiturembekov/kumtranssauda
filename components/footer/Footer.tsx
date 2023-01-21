@@ -15,7 +15,7 @@ const Footer: FC = () => {
             Наша цель <span>доверие</span> наших клиентов
           </div>
           <div className="copyright">
-            &copy; КұмТансСауда {new Date().getFullYear()}
+            &copy; КұмТрансСауда {new Date().getFullYear()}
           </div>
         </div>
       </div>

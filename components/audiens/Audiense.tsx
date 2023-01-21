@@ -55,7 +55,7 @@ const Audiense: FC = () => {
               show: {
                 x: 0,
                 opacity: 1,
-                transition: { ease: "easeInOut", duration: 0.3, delay: 1 },
+                transition: { ease: "easeInOut", duration: 0.3, delay: 0.5 },
               },
             }}
             initial="hidden"
